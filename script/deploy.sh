@@ -15,7 +15,7 @@ fi
 git config --global user.name $GIT_USER
 git config --global user.email $GIT_EMAIL
 git config --global credential.helper store
-echo "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+echo "https://${GIT_USER}:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
 
 git checkout -b gh-pages origin/gh-pages
 git add -A .
