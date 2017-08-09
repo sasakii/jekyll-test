@@ -20,6 +20,6 @@ echo "https://${GIT_USER}:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
 git checkout -b gh-pages origin/gh-pages
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --quiet origin `master` > /dev/null 2>&1
+git push --quiet origin gh-pages  > /dev/null 2>&1
 
 rm ~/.git-credentials
